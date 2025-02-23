@@ -9,9 +9,7 @@ const About = () => {
           {/* Education - Left side, double height */}
           <Card
             title='Education Journey.'
-            content='Math never got boring for me—solving problems and spotting patterns just clicked. That love for logic led me to coding, where every bug feels like a puzzle to crack. I was born in Jaipur, Rajasthan. I scored 86% in 10th grade and later secured the 97th percentile in JEE Mains, landing me at IIIT Nagpur, where I’m pursuing AI & ML. My passion for numbers drew me to Kaggle, where I once secured Rank 1.
-
-Beyond coding, I enjoy investing in stocks, playing chess, and listening to Bruno Mars. Cricket has been a childhood favorite, and I’m always eager to build, break, and fix things with code.'
+            content='I was born in Jaipur, Rajasthan, with a mind wired for logic and problem-solving. My love for math led me to coding, where every bug feels like a puzzle to crack. I secured the 97th percentile in JEE Mains and now pursue AI & ML at IIIT Nagpur. Passionate about data, I clinched Rank 1 on Kaggle and love building AI solutions. Beyond coding, I invest in stocks, play chess, and enjoy Bruno Mars. Cricket has been a lifelong love, and whether on the field or behind a screen, I’m always up for building, breaking, and optimizing with code.'
             image='https://iiitn.ac.in/images/album/upcoming-campus-photo//16.jpeg'
             className='md:col-span-2 h-[400px]'
           />
@@ -25,7 +23,7 @@ Beyond coding, I enjoy investing in stocks, playing chess, and listening to Brun
           {/* Tech Enthusiast - Medium width */}
           <Card
             title='Tech Obsession.'
-            content='I don’t just solve problems—I hunt them down, tear them apart, and rebuild them into something better. Whether it’s resurrecting a dead deployment at 2 AM, forcing an AI model to actually be useful, or making my ML models stop their endless feud, I thrive in the chaos of debugging and creation. It’s maddening, sure—but when everything finally clicks, and the code bends to my will? That’s pure adrenaline. I don’t work for tech—I make it work for me.'
+            content='I love when tech works for me, not the other way around. Messy systems, broken links, stubborn AI models—I dive in, break them apart, and rebuild them to work flawlessly. Whether it’s fine-tuning a deployment, crafting something from scratch, or making AI actually do its job, I thrive on turning chaos into precision. Every click fixes 1%, and there’s no greater thrill than forcing the pieces to align and watching everything click into place.'
             className='md:col-span-2'
           />
 

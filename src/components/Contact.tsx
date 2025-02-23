@@ -1,218 +1,36 @@
-import { FileText, Github, Linkedin, Mail, Code, Braces } from 'lucide-react';
-
-import { ReactNode, useEffect, useMemo, useState } from 'react';
-
-interface ContactItemProps {
-    icon: ReactNode;
-    label: string;
-    link: string;
-    position: {
-      top: string;
-      left: string;
-    };
-  }
+import { FileText, Github, Linkedin, Mail, Code, Braces, Twitter, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactLinks = [
-    {
-      icon: <Github className='w-6 h-6 text-white' />,
-      label: 'GitHub',
-      link: 'https://github.com/Ayushparwal',
-      position: { top: '20%', left: '80%' },
-    },
-    {
-      icon: <Linkedin className='w-6 h-6 text-white' />,
-      label: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/ayush-parwal-797a79255/',
-      position: { top: '40%', left: '20%' },
-    },
-    {
-      icon: <Mail className='w-6 h-6 text-white' />,
-      label: 'ayushparwal777@gmail.com',
-      link: 'mailto:ayushparwal777@gmail.com',
-      position: { top: '80%', left: '70%' },
-    },
-    {
-      icon: <FileText className='w-6 h-6 text-white' />,
-      label: 'Resume',
-      link: 'https://drive.google.com/file/d/1ul24fsObXHPZd1Z_L65XCi--_JvXbZB6/view',
-      position: { top: '65%', left: '45%' },
-    },
-    {
-      icon: <Code className="w-6 h-6 text-white" />,
-      label: "Kaggle",
-      link: "https://www.kaggle.com/ayushparwal", 
-      position: { top: "50%", left: "30%" },
-    },
-    {
-      icon: <Braces className="w-6 h-6 text-white" />,
-      label: "LeetCode",
-      link: "https://leetcode.com/ayushparwal22", 
-      position: { top: "30%", left: "60%" },
-    },
-  ];
-
-  const stars = useMemo(() => {
-    return [...Array(150)].map(() => ({
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-      delay: `${Math.random() * 3}s`,
-    }));
-  }, []);
-
-  // Convert percentage positions to viewport units for SVG coordinates
-  const getCoordinates = (position: { top: string; left: string }) => {
-    const top = parseFloat(position.top) / 100;
-    const left = parseFloat(position.left) / 100;
-    return {
-      x: left * 100,
-      y: top * 100,
-    };
-  };
-
-  const constellationLines = [
-    // LinkedIn to Resume
-    {
-      start: getCoordinates(contactLinks[1].position),
-      end: getCoordinates(contactLinks[3].position),
-    },
-    // GitHub to Resume
-    {
-      start: getCoordinates(contactLinks[0].position),
-      end: getCoordinates(contactLinks[3].position),
-    },
-    // Mail to Resume
-    {
-      start: getCoordinates(contactLinks[2].position),
-      end: getCoordinates(contactLinks[3].position),
-    },
-    // Mail to GitHub
-    {
-      start: getCoordinates(contactLinks[2].position),
-      end: getCoordinates(contactLinks[0].position),
-    },
-    // Kaggle to Resume
-    {
-      start: getCoordinates(contactLinks[4].position),
-      end: getCoordinates(contactLinks[3].position),
-    },
-    // Kaggle to LinkedIn
-    {
-      start: getCoordinates(contactLinks[4].position),
-      end: getCoordinates(contactLinks[1].position),
-    },
-    // LeetCode to GitHub
-    {
-      start: getCoordinates(contactLinks[5].position),
-      end: getCoordinates(contactLinks[0].position),
-    },
-    // LeetCode to Resume
-    {
-      start: getCoordinates(contactLinks[5].position),
-      end: getCoordinates(contactLinks[3].position),
-    },
+    { icon: <Github className='w-6 h-6 text-white' />, label: 'GitHub', link: 'https://github.com/Ayushparwal' },
+    { icon: <Linkedin className='w-6 h-6 text-white' />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/ayush-parwal-797a79255/' },
+    { icon: <Code className='w-6 h-6 text-white' />, label: 'Kaggle', link: 'https://www.kaggle.com/ayushparwal' }
   ];
 
   return (
-    <div className='relative bg-[#010219] overflow-hidden'>
-      <div className='relative h-[50vh] w-full'>
-        {stars.slice(0, 75).map((star, i) => (
-          <div
-            key={i}
-            className='absolute w-[1px] h-[1px] bg-white opacity-60 rounded-full animate-twinkle'
-            style={{
-              top: star.top,
-              left: star.left,
-              animationDelay: star.delay,
-            }}
-          />
+    <div className='bg-[#010219] min-h-screen flex flex-col items-center justify-center text-white p-8 border border-gray-500 rounded-lg'>
+      <h2 className='text-3xl font-bold mb-6'>Contact Me!</h2>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
+        {contactLinks.map((item, index) => (
+          <a 
+            key={index} 
+            href={item.link} 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            className='flex items-center space-x-3 p-4 bg-[#12163A] rounded-lg shadow-md hover:bg-[#1d2047] transition duration-300'
+          >
+            {item.icon}
+            <span>{item.label}</span>
+          </a>
         ))}
       </div>
-
-      {/* Main Contact Section (100vh) */}
-      <section
-        id='contact'
-        className='relative min-h-screen flex items-center justify-center'
-      >
-        {/* Background Stars */}
-        <div className='absolute inset-0'>
-          {stars.map((star, i) => (
-            <div
-              key={i}
-              className='absolute w-[1px] h-[1px] bg-white opacity-60 rounded-full animate-twinkle'
-              style={{
-                top: star.top,
-                left: star.left,
-                animationDelay: star.delay,
-              }}
-            />
-          ))}
-        </div>
-
-        {/* Constellation Lines */}
-        <svg className='absolute inset-0 w-full h-full'>
-          {constellationLines.map((line, index) => (
-            <line
-              key={index}
-              x1={`${line.start.x + 0.3}%`}
-              y1={`${line.start.y + 1.5}%`}
-              x2={`${line.end.x + 0.3}%`}
-              y2={`${line.end.y + 1.5}%`}
-              stroke='rgba(255, 255, 255, 1)'
-              strokeWidth='0.2'
-              className='constellation-line'
-            />
-          ))}
-        </svg>
-
-        {/* Contact Links */}
-        {contactLinks.map((item, index) => (
-          <ContactItem key={index} {...item} />
-        ))}
-      </section>
+      <footer className='mt-12 text-white/70 text-sm text-center'>
+        <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+        <p>
+          <a href='mailto:ayushparwal777@gmail.com' className='text-blue-400 hover:underline'>Message me</a>
+        </p>
+      </footer>
     </div>
-  );
-};
-
-const ContactItem = ({ icon, label, link, position }: ContactItemProps) => {
-  const [typedLabel, setTypedLabel] = useState('');
-  const [hovered, setHovered] = useState(false);
-
-  useEffect(() => {
-    let timeout;
-    if (hovered) {
-      let i = 0;
-      const interval = setInterval(() => {
-        if (i <= label.length) {
-          setTypedLabel(label.substring(0, i));
-          i++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 70);
-      return () => clearInterval(interval);
-    } else {
-      timeout = setTimeout(() => setTypedLabel(''), 200);
-    }
-    return () => clearTimeout(timeout);
-  }, [hovered, label]);
-
-  return (
-    <a
-      href={link}
-      target='_blank'
-      rel='noopener noreferrer'
-      className='absolute flex items-center group'
-      style={{ top: position.top, left: position.left }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      <div className='w-2 h-2 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,1)] animate-twinkle'></div>
-      <div className='ml-2'>{icon}</div>
-      <span className='ml-2 text-white text-sm transition-opacity duration-200'>
-        {typedLabel}
-      </span>
-    </a>
   );
 };
 
