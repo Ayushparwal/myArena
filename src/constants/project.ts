@@ -30,22 +30,6 @@ const projects = [
       technologies: ["Deep Learning", "Pre-trained Models", "LangChain", "Streamlit", "Python", "Agriculture AI"],
       link: "https://github.com/Ayushparwal/Plant-disease-Classification-using-pretrained-models"
     },
-    {
-      title: "String Matching",
-      description: "I have used a US-based dataset and applied NLP techniques to calculate the similarity score between strings using various distance metrics.",
-      image: "matching.jpg",
-      technologies: ["String Matching", "Fuzzy-wuzzy", "Tkinter", "Levenshtein-distance", "Python", "RapidFuzz"],
-      link: "https://github.com/Ayushparwal/String-Matching"
-    },
-    {
-      "title": "Vehicle-Parking-Cpp",
-      "description": "In this Project, I have added some features like how to add a vehicle and delete it from parking, etc.",
-      "image": "parking.jpg",
-      "technologies": ["CPP", "Terminal"],
-      "link": "https://github.com/Ayushparwal/Vehicle-parking-cpp"
-    },
-
-
     
   ];
 

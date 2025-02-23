@@ -37,12 +37,7 @@ Beyond coding, I enjoy investing in stocks, playing chess, and listening to Brun
           />
 
           {/* Quick Facts - Small card */}
-          <Card
-            title='Bruno Mars.'
-            image='BrunoMars.jpeg'
-            imgsize={'52'}
-            className='md:col-span-1'
-          />
+          
         </div>
       </div>
     </section>
