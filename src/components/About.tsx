@@ -19,12 +19,12 @@ Beyond coding, I enjoy investing in stocks, playing chess, and listening to Brun
             {/* Two stacked cards on the right */}
             <Card
               title='Foodie.'
-              image='foodie_veg.jpg'
+              image='foodie_veg.jpeg'
               className='h-[185px]'
             />
             <Card
               title='Binge List.'
-              image='cricket_virat.jpg'
+              image='cricket_virat.jpeg'
               content='Been watching Cricket and Fan of RCB.'
               className='h-[190px]'
             />
@@ -52,7 +52,7 @@ Beyond coding, I enjoy investing in stocks, playing chess, and listening to Brun
           {/* Quick Facts - Small card */}
           <Card
             title='Bruno Mars.'
-            image='BrunoMars.jpg'
+            image='BrunoMars.jpeg'
             imgsize={'52'}
             className='md:col-span-1'
           />
