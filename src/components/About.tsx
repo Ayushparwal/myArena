@@ -15,20 +15,7 @@ Beyond coding, I enjoy investing in stocks, playing chess, and listening to Brun
             image='https://iiitn.ac.in/images/album/upcoming-campus-photo//16.jpeg'
             className='md:col-span-2 h-[400px]'
           />
-          <div className='md:col-span-1 flex flex-col gap-6'>
-            {/* Two stacked cards on the right */}
-            <Card
-              title='Foodie.'
-              image='foodie_veg.jpeg'
-              className='h-[185px]'
-            />
-            <Card
-              title='Binge List.'
-              image='cricket_virat.jpeg'
-              content='Been watching Cricket and Fan of RCB.'
-              className='h-[190px]'
-            />
-          </div>
+          
         </div>
 
         {/* Rest of the cards */}
