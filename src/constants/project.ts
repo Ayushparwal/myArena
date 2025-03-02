@@ -30,6 +30,22 @@ const projects = [
       technologies: ["Deep Learning", "Pre-trained Models", "LangChain", "Streamlit", "Python", "Agriculture AI"],
       link: "https://github.com/Ayushparwal/Plant-disease-Classification-using-pretrained-models"
     },
+
+    {
+      title: "MazeSolver",
+      description: "An intelligent pathfinding system that uses deep learning and heuristic algorithms like Hill Climbing to efficiently solve mazes. Built with Python and Streamlit, this project visualizes AI-driven decision-making in real time.",
+      image: "https://i.imgur.com/Ic8ROsE.png",
+      technologies: ["AI", "Hill Climbing Algo", "Python", "Streamlit"],
+      link: "https://github.com/Ayushparwal/MazeSolver"
+    },
+
+    {
+      title: "String Matching",
+      description: "This project leverages String Similarity Analysis: Distance Metrics & Cosine Similarity",
+      image: "https://i.imgur.com/Cfwznuu.png",
+      technologies: ["Cosing Similarity", "NLP", "Streamlit", "Python"],
+      link: "https://github.com/Ayushparwal/String-Matching"
+    },
     
   ];
 

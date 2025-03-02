@@ -17,10 +17,10 @@ const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={`glassmorphic overflow-hidden rounded-2xl group flex flex-col items-center text-center ${className}`}
+      className={`glassmorphic overflow-hidden rounded-2xl group ${className}`}
     >
       {image ? (
-        <div className='relative w-full'>
+        <div className='relative'>
           <img
             src={image}
             alt={title}
@@ -30,7 +30,7 @@ const Card = ({
                 : `w-full h-${imgsize} object-cover transition-transform duration-300`
             }
           />
-          <div className='absolute inset-0 bg-gradient-to-b from-transparent to-black/50 flex items-end justify-center'>
+          <div className='absolute inset-0 bg-gradient-to-b from-transparent to-black/50 flex items-end'>
             <h3 className='text-4xl font-[800] text-white p-6 transition-transform duration-300 group-hover:translate-x-2'>
               {title}
             </h3>
