@@ -15,13 +15,7 @@ const projects = [
       link: "https://github.com/Ayushparwal/Smoker-Prediction-app"
       
     },
-    {
-      title: "MazeSolver",
-      description: "This project implements a pathfinding algorithm to navigate mazes efficiently using the Hill Climbing algorithm.",
-      image: "https://i.imgur.com/8fxZDj9.png",
-      technologies: ["Python", "PyTorch", "Hill Climbing", "Pathfinding", "AI", "Tkinter"],
-      link: "https://github.com/Ayushparwal/MazeSolver"
-    },
+    
     
     {
       title: "Plant Disease Classification",
