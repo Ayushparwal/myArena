@@ -8,7 +8,7 @@ const About = () => {
         <div className='flex justify-center mb-6'>
           <Card
             title='Education Journey.'
-            content='I was born in Jaipur, Rajasthan, with a mind wired for logic and problem-solving. My love for math led me to coding, where every bug feels like a puzzle to crack. I secured the 97th percentile in JEE Mains and now pursue AI & ML at IIIT Nagpur. Passionate about data, I clinched Rank 1 on Kaggle and love building AI solutions. Beyond coding, I invest in stocks, play chess, and enjoy Bruno Mars. Cricket has been a lifelong love, and whether on the field or behind a screen, I’m always up for building, breaking, and optimizing with code.'
+            content='My love for math led me to coding, where every bug feels like a puzzle to crack. I secured the 97th percentile in JEE Mains and now pursue AI & ML at IIIT Nagpur. Passionate about data, I clinched Rank 1 on Kaggle and love building AI solutions. Beyond coding, I invest in stocks, play chess, and enjoy Bruno Mars. Cricket has been a lifelong love, and whether on the field or behind a screen, I’m always up for building, breaking, and optimizing with code.'
             image='https://iiitn.ac.in/images/album/upcoming-campus-photo/16.jpeg'
             className='w-full h-[400px] mx-auto'
           />
@@ -24,7 +24,7 @@ const About = () => {
 
           <Card
             title='Things to know.'
-            content='I speak three languages fluently—English, Hindi, and Marwadi. I love watching cricket, coding for hours, and the thrill of racing cars. And when it comes to food, nothing beats a good plate of Curry khichadi.'
+            content='I speak four languages—English, Hindi, Marwadi, and some Marathi. I love watching cricket, coding for hours, and the thrill of racing cars. And when it comes to food, nothing beats a good plate of curry khichadi.'
             className='w-full mx-auto'
           />
         </div>
