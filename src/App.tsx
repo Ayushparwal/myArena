@@ -21,6 +21,7 @@ export default function App() {
         <About />
         <Projects />
         <Contact />
+        
       </main>
     </div>
   );
