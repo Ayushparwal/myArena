@@ -1,4 +1,3 @@
-
 const Navbar = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -8,8 +7,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-      <nav className="glassmorphic squircle px-8 py-4 flex items-center gap-8">
+    <nav className="w-full py-4 flex justify-center">
+      <div className="glassmorphic squircle px-8 py-4 flex items-center gap-8">
         <button 
           onClick={() => scrollToSection('home')} 
           className="text-white/90 hover:text-white transition-colors font-[500]"
@@ -34,8 +33,8 @@ const Navbar = () => {
         >
           Contact
         </button>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 

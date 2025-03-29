@@ -44,7 +44,7 @@ const Contact = () => {
       </div>
 
       <footer className='mt-10 text-sm opacity-80'>
-        &copy; {new Date().getFullYear()} Ayush Parwal. All rights reserved.
+        &copy; {new Date().getFullYear()} Made by ❤️ Ayush Parwal. All rights reserved.
       </footer>
     </section>
   );
