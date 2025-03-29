@@ -32,7 +32,7 @@ const Home = () => {
         </h6>
 
         <p className="text-lg font-medium text-white max-w-2xl leading-relaxed">
-          I am an ML developer passionate about AI agents and Natural Language
+          I am a ML developer passionate about AI agents and Natural Language
           Processing. I have a strong interest in Linux and Data Structures
           and Algorithms. Currently, I work with LLM APIs to build intelligent
           and innovative applications. Always exploring new technologies to push
