@@ -32,23 +32,11 @@ const Home = () => {
         </h6>
 
         <p className="text-lg font-medium text-white max-w-2xl leading-relaxed">
-          I am an <span className="text-[#6305d4] font-bold">ML developer</span>{" "}
-          passionate about
-          <span className="text-green-400 font-bold"> AI agents</span> and
-          <span className="text-purple-400 font-bold">
-            {" "}
-            Natural Language Processing (NLP)
-          </span>
-          . I have a strong interest in{" "}
-          <span className="text-yellow-400 font-bold">Linux</span>,
-          <span className="text-orange-400 font-bold">
-            {" "}
-            Data Structures and Algorithms
-          </span>
-          . Currently, I work with{" "}
-          <span className="text-red-400 font-bold">LLM APIs</span> to build
-          intelligent and innovative applications. Always exploring new
-          technologies to push the boundaries of AI.
+          I am an ML developer passionate about AI agents and Natural Language
+          Processing. I have a strong interest in Linux and Data Structures
+          and Algorithms. Currently, I work with LLM APIs to build intelligent
+          and innovative applications. Always exploring new technologies to push
+          the boundaries of AI.
         </p>
 
         <div className="flex justify-center items-center space-x-4 mt-6">
@@ -88,7 +76,6 @@ const Home = () => {
               <SiJupyter className="text-orange-300 w-10 h-10" />
               <SiPlotly className="text-blue-400 w-10 h-10" />
               <SiMlflow className="text-blue-500 w-10 h-10" />
-              
             </div>
           </div>
         </div>
