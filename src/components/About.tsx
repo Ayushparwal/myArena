@@ -13,7 +13,7 @@ const About = () => {
             image='https://iiitn.ac.in/images/album/upcoming-campus-photo/16.jpeg'
             className='w-full h-auto mx-auto'
           />
-
+      
         </div>
 
         {/* Rest of the cards */}
@@ -21,12 +21,14 @@ const About = () => {
           <Card
             title='Tech Obsession.'
             content="I love when tech works for me, not the other way around. Messy systems, broken links, stubborn AI models—I dive in, break them apart, and rebuild them to work flawlessly. Whether it’s fine-tuning a deployment, crafting something from scratch, or making AI actually do its job, I thrive on turning chaos into precision. Every click fixes 1%, and there’s no greater thrill than forcing the pieces to align and watching everything click into place."
+            image='https://i.postimg.cc/s2H1xhTy/techobssesion.webp'
             className='w-full mx-auto'
           />
 
           <Card
             title='Things to know.'
             content="I speak four languages—English, Hindi, Marwadi, and some Marathi. I love watching cricket, coding for hours, and the thrill of racing cars. And when it comes to food, nothing beats a good plate of curry khichadi."
+            image='https://i.postimg.cc/L8B19hd6/interests.jpg'
             className='w-full mx-auto'
           />
         </div>
@@ -34,7 +36,7 @@ const About = () => {
         <Card
     title='My Areas of Interest'
     content="I thrive at the intersection of AI, machine learning, and real-world problem-solving, with a focus on Generative AI, LLMs, NLP, and Deep Learning. I enjoy tackling predictive modeling, AI ethics, and building intelligent systems that enhance decision-making. Beyond AI, I explore stock markets, algorithmic trading, and cricket analytics through data-driven insights."
-    image='https://i.imgur.com/X7zWbNv.jpeg' 
+    image='https://i.postimg.cc/yYS6BNgg/career.jpg' 
     className='w-full h-auto mx-auto'
   />
   </div>

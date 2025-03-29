@@ -1,4 +1,23 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import {
+  SiTensorflow,
+  SiKeras,
+  SiNumpy,
+  SiPandas,
+  SiScipy,
+  SiOpencv,
+  SiPytorch,
+  SiScikitlearn,
+  SiFastapi,
+  SiHuggingface,
+  SiJupyter,
+  // SiMatplotlib,
+  // SiSeaborn,
+  SiPlotly,
+  SiMlflow,
+  // SiXgboost,
+  // SiLightgbm,
+} from "react-icons/si";
 
 const Home = () => {
   return (
@@ -6,15 +25,12 @@ const Home = () => {
       id="home"
       className="relative h-screen flex flex-col items-center justify-center text-white text-center px-6"
     >
-      
       <div className="relative z-10">
-        {" "}
-        {/* Added wrapper to keep text above background */}
         <h1 className="text-6xl font-extrabold mb-4 glow-text">Ayush Parwal</h1>
         <h6 className="text-green-500 text-xl font-semibold mb-4">
           Known as "ayushokaay"
         </h6>
-        {/* Bio */}
+
         <p className="text-lg font-medium text-white max-w-2xl leading-relaxed">
           I am an <span className="text-[#6305d4] font-bold">ML developer</span>{" "}
           passionate about
@@ -34,7 +50,7 @@ const Home = () => {
           intelligent and innovative applications. Always exploring new
           technologies to push the boundaries of AI.
         </p>
-        {/* Social Media Links */}
+
         <div className="flex justify-center items-center space-x-4 mt-6">
           <a href="https://github.com/Ayushparwal" target="_blank">
             <Github className="w-6 h-6 text-white hover:text-gray-400" />
@@ -48,6 +64,33 @@ const Home = () => {
           <a href="https://twitter.com/ayushparwal2004" target="_blank">
             <Twitter className="w-6 h-6 text-white hover:text-gray-400" />
           </a>
+        </div>
+      </div>
+
+      {/* AI/ML Tech Stack Section */}
+      <div className="mt-12">
+        <h2 className="text-3xl font-bold text-white mb-6">Tech Stack</h2>
+
+        <div className="flex flex-col items-center space-y-4 text-center">
+          <div>
+            <h3 className="text-lg font-semibold text-purple-400"></h3>
+            <div className="flex flex-wrap justify-center gap-4 mt-2">
+              <SiTensorflow className="text-orange-500 w-10 h-10" />
+              <SiKeras className="text-red-500 w-10 h-10" />
+              <SiNumpy className="text-blue-500 w-10 h-10" />
+              <SiPandas className="text-purple-500 w-10 h-10" />
+              <SiScipy className="text-cyan-400 w-10 h-10" />
+              <SiOpencv className="text-green-500 w-10 h-10" />
+              <SiPytorch className="text-red-600 w-10 h-10" />
+              <SiScikitlearn className="text-orange-400 w-10 h-10" />
+              <SiFastapi className="text-green-400 w-10 h-10" />
+              <SiHuggingface className="text-yellow-400 w-10 h-10" />
+              <SiJupyter className="text-orange-300 w-10 h-10" />
+              <SiPlotly className="text-blue-400 w-10 h-10" />
+              <SiMlflow className="text-blue-500 w-10 h-10" />
+              
+            </div>
+          </div>
         </div>
       </div>
     </section>
