@@ -26,10 +26,16 @@ const Home = () => {
       className="relative h-screen flex flex-col items-center justify-center text-white text-center px-6"
     >
       <div className="relative z-10">
-        <h1 className="text-6xl font-extrabold mb-4 glow-text">Ayush Parwal</h1>
-        <h6 className="text-green-500 text-xl font-semibold mb-4">
-          Known as "ayushokaay"
-        </h6>
+      <h1
+  className="font-extrabold mb-6 glow-text tracking-wide"
+  style={{ fontSize: "3rem" }}
+>
+  Ayush Parwal
+</h1>
+<h6 className="text-green-500 text-2xl font-semibold mb-4">
+  Known as "ayushokaay"
+</h6>
+
 
         <p className="text-lg font-medium text-white max-w-2xl leading-relaxed">
           I am a ML developer passionate about AI agents and Natural Language

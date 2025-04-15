@@ -46,7 +46,7 @@ const Contact = () => {
 
       <footer className='mt-10 text-sm opacity-80 text-center px-4'>
         &copy; {new Date().getFullYear()} Made with ❤️ by Ayush Parwal. All rights reserved.<br/>
-        Contact: +91 7841072103
+        
       </footer>
     </section>
   );
