@@ -10,7 +10,7 @@ const About = () => {
           <Card
             title='Education Journey.'
             content="My love for math led me to coding, where every bug feels like a puzzle to crack. I secured the 97th percentile in JEE Mains and now pursue AI & ML at IIIT Nagpur. Passionate about data, I clinched Rank 1 on Kaggle and love building AI solutions. Beyond coding, I invest in stocks, play chess, and enjoy Bruno Mars. Cricket has been a lifelong love, and whether on the field or behind a screen, I’m always up for building, breaking, and optimizing with code."
-            image='https://iiitn.ac.in/images/album/upcoming-campus-photo/16.jpeg'
+            image='https://i.postimg.cc/9XycCcNj/maxresdefault.jpg'
             className='w-full h-auto mx-auto'
           />
       
