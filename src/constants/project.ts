@@ -35,7 +35,7 @@ const projects = [
 
     {
       title: "String Matching",
-      description: "This project leverages String Similarity Analysis: Distance Metrics & Cosine Similarity",
+      description: "This project leverages String Similarity Analysis: Distance Metrics & Cosine Similarity.",
       image: "https://i.imgur.com/Cfwznuu.png",
       technologies: ["Cosing Similarity", "NLP", "Streamlit", "Python"],
       link: "https://github.com/Ayushparwal/String-Matching"

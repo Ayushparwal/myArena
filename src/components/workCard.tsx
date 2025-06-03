@@ -6,31 +6,35 @@ type WorkCardProps = {
   descriptions: string[];
 };
 
-const WorkCard = ({ title, organization, period, location, descriptions }: WorkCardProps) => {
+const WorkCard = ({
+  title,
+  organization,
+  period,
+  location,
+  descriptions,
+}: WorkCardProps) => {
   return (
-    <div className="bg-gray-800 rounded-lg p-6 shadow-md max-w-xl w-full">
-      <div className="flex justify-between items-start mb-4 flex-wrap">
-        {/* Left side: Title and Organization */}
+    <div className="bg-gray-800 rounded-2xl p-4 sm:p-5 shadow-md w-full transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+      <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1 sm:gap-0 mb-3">
+        {/* Title & Organization */}
         <div>
-          <h3 className="text-xl font-bold">{title}</h3>
+          <h3 className="text-lg sm:text-xl font-semibold">{title}</h3>
           <p className="text-sm text-gray-300">{organization}</p>
         </div>
 
-        {/* Right side: Period and Location */}
-        <div className="text-sm text-gray-400 text-right whitespace-nowrap mt-2 md:mt-0">
+        {/* Period & Location */}
+        <div className="text-sm text-gray-400 sm:text-right">
           <p>{period}</p>
-          <p>{location}</p>
+          <p className="truncate max-w-[150px]">{location}</p>
         </div>
       </div>
 
-      {/* Descriptions below */}
-      <div>
+      {/* Descriptions */}
+      <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-200">
         {descriptions.map((desc, index) => (
-          <p key={index} className="text-gray-200 mb-2">
-            {desc}
-          </p>
+          <li key={index}>{desc}</li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
