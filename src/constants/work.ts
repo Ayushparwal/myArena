@@ -1,12 +1,33 @@
 const work = [
   {
-    title: "Research Student",
+    title: "Machine Learning Engineering Intern",
+    organization: "Stealth AI Startup",
+    period: "Jul 2025 – Present",
+    location: "Remote",
+    descriptions: [
+      "Working on cutting-edge AI-powered platforms to optimize Security and LLM Hijacking",
+      "Building scalable machine learning pipelines and experimenting with multimodal learning approaches in stealth-mode product development."
+    ]
+  },
+  {
+    title: "AI Intern",
+    organization: "PathBreakers",
+    period: "Jun 2025 – Jun 2025",
+    location: "Remote",
+    descriptions: [
+      "Built and integrated AI-powered tools to generate personalized career reports and intelligent student profiling.",
+      "Engineered recommendation systems to deliver tailored guidance in ed-tech environments, enhancing user engagement and decision-making."
+    ]
+  },
+  {
+    title: "Research Student/Fellow",
     organization: "Indian Space Research Organisation (ISRO)",
     period: "Jan 2025 – Feb 2025",
     location: "Remote",
     descriptions: [
-      "Contributed in detailed research and simulations in Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD).",
-      "Reviewed and analyzed several research papers to support project development and data interpretation."
+      "Conducted in-depth research and simulations in Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD).",
+      "Reviewed and interpreted research papers to enhance technical accuracy and support experimental validation.",
+      "Submitted all finalized simulation data and analysis reports to the Financial Data & Planning Division for project budgeting and feasibility review."
     ]
   },
   {
@@ -39,7 +60,6 @@ const work = [
       "Trained models using XGBoost, CatBoost, and LightGBM, optimized via Optuna, combined using ensemble learning on a Kaggle T4 GPU instance."
     ]
   },
-  
   {
     title: "Competitor",
     organization: "LLMs - You Can't Please Them All (Kaggle Competition)",
