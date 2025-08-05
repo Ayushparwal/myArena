@@ -1,93 +1,41 @@
-import Card from './AboutCard';
+import React from 'react';
 
-const About = () => {
+const About: React.FC = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white"
-    >
-      <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-green-400 text-center tracking-tight">
-        About Me
-      </h2>
-
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-10 max-w-5xl w-full">
-        {/* Left Side: Profile Image */}
-        <div className="w-40 h-40 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-green-400 shadow-lg shrink-0">
-          <img
-            src="/assets/ayushprof.jpg"
-            alt="Ayush Parwal"
-            className="object-cover w-full h-full"
-            loading="lazy"
-          />
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Deeply curious problem solver — building intelligent systems, exploring AI frontiers, and constantly experimenting.
+          </p>
         </div>
 
-        {/* Right Side: Text + Card */}
-        <div className="w-full md:w-2/3">
-          <Card
-            title="My Journey into AI & Code"
-            content={
-              <ul className="list-disc text-sm sm:text-base text-zinc-300 pl-5 space-y-2">
-                <li>
-                  Deeply curious problem solver — started with math puzzles, now building intelligent systems.
-                </li>
-                <li>
-                  Ranked in the top 3% of JEE Mains; pursuing B.Tech in AI & ML at IIIT Nagpur.
-                </li>
-                <li>
-                  Passionate about AI, LLMs, and building real-world automation with NLP.
-                </li>
-                <li>
-                  Exploring prompt engineering, generative AI, and agentic AI systems.
-                </li>
-                <li>
-                  Currently researching jailbreaks and prompt injection attacks in LLMs.
-                </li>
-                <li>
-                  Fast learner who loves building MVPs and iterating through feedback.
-                </li>
-                <li>
-                  Obsessed with chess, strategy, and understanding how systems behave.
-                </li>
-                <li>
-                  Regularly tunes into Bruno Mars and lo-fi beats while coding.
-                </li>
-                <li>
-                  Loves learning about the stock market, investing, and financial data.
-                </li>
-                <li>
-                  Always experimenting, open-sourcing, and pushing boundaries in AI.
-                </li>
-              </ul>
-            }
-            className="w-full h-auto mx-auto shadow-xl border border-zinc-700 bg-zinc-900/70 backdrop-blur-lg"
-          />
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            Building the Future with AI & Code
+          </h3>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            I’m a B.Tech student at IIIT Nagpur in Artificial Intelligence & Machine Learning, ranked in the top 3% of JEE Mains.
+            My journey began with math puzzles and curiosity — now I’m building AI-powered systems and automation tools that make a real-world impact.
+          </p>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            I'm especially passionate about natural language processing, large language models, prompt engineering, and agentic AI systems. 
+            Currently researching jailbreaks and prompt injection attacks in LLMs, I thrive in the fast-moving world of AI where rapid prototyping, feedback, and iteration matter.
+          </p>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            Whether it’s creating smart automation workflows or deploying intelligent apps using multimodal data, I enjoy building MVPs that solve real problems. 
+            I’m also active in competitions and research, constantly learning and collaborating.
+          </p>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            When I’m not working on AI or full-stack dev, I’m probably playing chess, listening to Bruno Mars or lo-fi while coding, 
+            or diving deep into financial data and market strategies.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Open-sourcing, researching, or just tinkering — I’m always pushing boundaries in tech, one experiment at a time.
+          </p>
         </div>
       </div>
-
-      {/* GitHub Profile Link */}
-      <p className="mt-12 text-center">
-        <a
-          href="https://ayushparwal.github.io/boom/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-white text-base sm:text-lg font-semibold hover:text-green-400 transition-all duration-300 group"
-        >
-          <span className="underline decoration-dotted underline-offset-4 group-hover:decoration-solid">
-            More About Me?
-          </span>
-          <svg
-            className="w-5 h-5 transition-transform duration-300 transform group-hover:translate-x-1"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              fillRule="evenodd"
-              d="M12.293 3.293a1 1 0 011.414 0l4.999 4.999a1 1 0 010 1.414l-4.999 5a1 1 0 01-1.414-1.415L15.586 10H3a1 1 0 110-2h12.586l-3.293-3.293a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </a>
-      </p>
     </section>
   );
 };

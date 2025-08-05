@@ -1,31 +1,26 @@
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Work from "./components/Work"
-import Contact from "./components/Contact";
-
-
-export default function App() {
+function App() {
   return (
-    <div className="relative bg-[#010219]">
-      <div className="absolute inset-0 h-screen grid-background"></div>
-
-      <div className="absolute inset-0 h-screen overflow-hidden">
-        <div className="absolute -left-1/4 -top-1/4 w-[150%] h-[150%]">
-          <div className="light-streak absolute w-[60%] h-[200px] rotate-45 blur-[100px] bg-[#4169E1] opacity-20"></div>
-        </div>
-      </div>
-      
-      
-      
-      <main className="relative">
-        <Home />
-        <About />
-        <Projects />
-        <Work/>
-        <Contact />
-      </main>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Footer />
     </div>
   );
 }
+
+export default App;
