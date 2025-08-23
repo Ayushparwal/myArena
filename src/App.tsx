@@ -7,10 +7,14 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HiddenVisitorCounter from './components/HiddenVisitorCounter'; // import the counter
 
 function App() {
   return (
     <div className="min-h-screen">
+      {/* Hidden counter increments automatically on page load */}
+      <HiddenVisitorCounter />
+
       <Header />
       <Hero />
       <About />

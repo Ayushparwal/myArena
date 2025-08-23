@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
-      value: "127.0.0.1, localhost",
+      value: "Jaipur, India",
       href: "#",
     },
   ];
