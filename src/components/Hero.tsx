@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         <div className="flex justify-center md:justify-start flex-1">
   <a href="https://www.instagram.com/ayushokaay" target="_blank" rel="noopener noreferrer">
     <img
-      src="Profile.jpg"
+      src="my_image.jpg"
       alt="Ayush Parwal"
       className="w-56 h-56 md:w-72 md:h-72 rounded-full shadow-2xl object-cover 
                  ring-4 ring-green-500 ring-offset-2 ring-offset-white 
